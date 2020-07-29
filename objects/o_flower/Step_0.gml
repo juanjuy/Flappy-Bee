@@ -1,6 +1,4 @@
-if o_bird.status = 2 {
-	x -= 12;
-}
+x -= o_game.game_speed;
 
 if dir = 0 {
 	y -= 3;
@@ -14,11 +12,8 @@ if y > room_height - 100 {
 	dir = 1;
 }
 
-if o_bird.status = 1 {
-	x -= 4;
-}
-
 if place_meeting(x,y,o_bird) && o_bird.status != 2 {
 	instance_destroy();
 	audio_play_sound(flower_get,1,false);
+	audio_sound_gain(flower_get,0.5,0);
 }

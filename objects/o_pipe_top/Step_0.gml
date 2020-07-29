@@ -1,12 +1,4 @@
-
-
-if o_bird.status = 2 {
-	x -= 12;
-}
-
-if o_bird.status = 1 {
-	x -= 4;
-}
+x -= o_game.game_speed;
 
 if x < 0 {
 	instance_destroy(id);

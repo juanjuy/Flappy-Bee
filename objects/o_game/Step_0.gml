@@ -1,5 +1,13 @@
 var bg_id = layer_background_get_id("Background");
 
+if o_bird.status = 2 {
+	game_speed = 12;
+} else if o_bird.status = 1 {
+	game_speed = 4;
+} else {
+	game_speed = 0;
+}
+
 if game_start = true and !instance_exists(o_pipe_top){
 	top_scale = random_range(1,4);
 	instance_create_depth(room_width,0,1,o_pipe_top);
@@ -47,6 +55,7 @@ if game_start = true && (instance_number(o_pipe_bottom) < 2 and (o_pipe_bottom.x
 if instance_exists(o_pipe_top) && o_pipe_top.x = 480 && o_bird.status = 1 {
 	game_score += 1;
 	audio_play_sound(point_get,1,false);
+	audio_sound_gain(point_get,0.5,0);
 } else if o_bird.status = 2 {
 	if o_pipe_top.x = 476 or o_pipe_top.x = 472 or o_pipe_top.x = 468 {
 		game_score += 1;

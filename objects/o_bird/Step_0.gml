@@ -40,9 +40,10 @@ if keyboard_check_pressed(vk_space) && status != 0 {
 	o_game.game_start = true;
 	if !audio_is_playing(bgm) {
 		audio_play_sound(bgm,1,true);
+		audio_sound_gain(bgm,.05,0);
 	}
 	timer = 7;
-	audio_sound_gain(flap,.3,0);
+	audio_sound_gain(flap,.1,0);
 	audio_play_sound(flap,1,false);
 }
 
@@ -50,6 +51,7 @@ if status = 1 && (place_meeting(x,y,o_pipe_top) or place_meeting(x,y,o_pipe_bott
 	status = 0;
 	hyper_count = -1;
 	audio_play_sound(fall,1,false);
+	audio_sound_gain(fall,0.2,0);
 }
 
 if keyboard_check_pressed(ord("R")) {
@@ -73,7 +75,7 @@ if status = 2 {
 	sprite_index = s_bird_hyper;
 	if !audio_is_playing(hyper) {
 		audio_play_sound(hyper,1,false);
-		audio_sound_gain(hyper,.7,0);
+		audio_sound_gain(hyper,.2,0);
 		audio_pause_sound(bgm);
 	}
 }

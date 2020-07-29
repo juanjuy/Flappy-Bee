@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "1471f817-dd81-4be6-a76e-48c4b481989f",
+            "Value": {
+                "id": "c94b360b-e58e-4ede-afe1-84acfac9ee76",
+                "resourcePath": "sounds\\hyper\\hyper.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "18cc7af7-f0d0-495e-919d-fe3afea317f9",
             "Value": {
                 "id": "4b1960b4-b85a-46b8-bec3-dc9c6398c12c",
@@ -84,14 +92,6 @@
                 "id": "6416c1b8-919e-4a73-9f36-80c211ea50f7",
                 "resourcePath": "sprites\\s_flower_count\\s_flower_count.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "22f2cd98-a1bc-4fe9-8dc1-f3327f8e1f21",
-            "Value": {
-                "id": "979b28c7-afe1-4f1b-a00f-550b17ee28dd",
-                "resourcePath": "sounds\\hyper\\hyper.yy",
-                "resourceType": "GMSound"
             }
         },
         {
@@ -124,6 +124,14 @@
                 "id": "6e4f2731-546f-452d-a67e-a1abdc9d74b9",
                 "resourcePath": "rooms\\room0\\room0.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "2c9c4f29-9274-4c8a-aeee-6078c1ed2afc",
+            "Value": {
+                "id": "4341418e-e5d0-44c6-8b70-098c81b06ff0",
+                "resourcePath": "fonts\\fnt_text\\fnt_text.yy",
+                "resourceType": "GMFont"
             }
         },
         {
